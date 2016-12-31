@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>MoodOffsetConcited</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Conceited</li>
+    </requiredTraits>
+    <requiredTraitsDegree>1</requiredTraitsDegree>
+    <stages>
+      <li>
+        <label>Conceited</label>
+        <description>Natural Bonus from Conceited Trait.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <ThoughtDef>
+    <defName>MoodOffsetLowSelfEsteem</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>LowSelfEsteem</li>
+    </requiredTraits>
+    <requiredTraitsDegree>1</requiredTraitsDegree>
+    <stages>
+      <li>
+        <label>Low Self-Esteem</label>
+        <description>Natural Bonus from Low Self-Esteem Trait.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

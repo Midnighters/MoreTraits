@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TraitDefs>
+
+  <!--=================== Thought Related ===================-->
+
+  <TraitDef>
+	<defName>Confident</defName>
+	<commonality>0.4</commonality>
+	<degreeDatas>
+		<li>
+			<label>Confident</label>
+			<description>NAME is confident that everything will work out for the best.</description>
+			<statOffsets>
+				<MentalBreakThreshold>-0.06</MentalBreakThreshold>
+			</statOffsets>
+			<skillGains>
+				<li>
+					<key>Social</key>
+					<value>3</value>
+				</li>
+			</skillGains>
+		</li>
+	</degreeDatas>
+	<conflictingTraits>
+		<li>Paranoid</li>
+	</conflictingTraits>
+  </TraitDef>
+  
+  <TraitDef>
+	<defName>Conceited</defName>
+	<commonality>0.4</commonality>
+	<degreeDatas>
+		<li>
+			<label>Conceited</label>
+			<description>NAME thinks very highly of themselves, even if others don't think so. HE can easily get on someones nerves.</description>
+			<statOffsets>
+				<MentalBreakThreshold>0.02</MentalBreakThreshold>
+			</statOffsets>
+			<skillGains>
+				<li>
+					<key>Social</key>
+					<value>1</value>
+				</li>
+			</skillGains>
+		</li>
+	</degreeDatas>
+	<conflictingTraits>
+		<li>LowSelfEsteem</li>
+	</conflictingTraits>
+  </TraitDef>
+  
+  <TraitDef>
+	<defName>LowSelfEsteem</defName>
+	<commonality>0.4</commonality>
+	<degreeDatas>
+		<li>
+			<label>Low Self-Esteem</label>
+			<description>NAME doesn't think very highly of themselves, even if other do. </description>
+			<statOffsets>
+				<MentalBreakThreshold>-0.02</MentalBreakThreshold>
+			</statOffsets>
+			<skillGains>
+				<li>
+					<key>Social</key>
+					<value>-1</value>
+				</li>
+			</skillGains>
+		</li>
+	</degreeDatas>
+	<conflictingTraits>
+		<li>Conceited</li>
+	</conflictingTraits>
+  </TraitDef>
+  
+  <TraitDef>
+	<defName>Paranoid</defName>
+	<commonality>0.4</commonality>
+	<degreeDatas>
+		<li>
+			<label>Paranoid</label>
+			<description>NAME has a feeling everything is going to fall apart..</description>
+			<statOffsets>
+				<MentalBreakThreshold>0.06</MentalBreakThreshold>
+			</statOffsets>
+			<skillGains>
+				<li>
+					<key>Social</key>
+					<value>-3</value>
+				</li>
+			</skillGains>
+		</li>
+	</degreeDatas>
+	<conflictingTraits>
+		<li>Confident</li>
+	</conflictingTraits>
+  </TraitDef>
+  
+  <!--=================== Weight Related ===================-->
+
+  <TraitDef>
+	<defName>Overweight</defName>
+	<commonality>0.25</commonality>
+	<degreeDatas>
+		<li>
+			<label>Overweight</label>
+			<description>NAME is severely overweight, not with lack of exercise. HE moves slow, and works even slower.</description>
+			<statOffsets>
+				<MoveSpeed>-0.3</MoveSpeed>
+				<WorkSpeedGlobal>-0.25</WorkSpeedGlobal>
+			</statOffsets>
+		</li>
+	</degreeDatas>
+	<conflictingTraits>
+		<li>Anorexic</li>
+		<li>Athletic</li>
+	</conflictingTraits>
+  </TraitDef>   
+  
+  <TraitDef>
+	<defName>Athletic</defName>
+	<commonality>0.25</commonality>
+	<degreeDatas>
+		<li>
+			<label>Athletic</label>
+			<description>NAME is very athletic, HE has honed his mind and body for most of HIS life. Making HIM better at anything physical. HE works and moves fast!</description>
+			<statOffsets>
+				<MoveSpeed>0.35</MoveSpeed>
+				<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+				<AimingDelayFactor>-0.10</AimingDelayFactor>
+				<ShootingAccuracy>0.10</ShootingAccuracy>
+			</statOffsets>
+			<skillGains>
+				<li>
+					<key>Melee</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>Shooting</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>Construction</key>
+					<value>1</value>
+				</li>
+			</skillGains>
+		</li>
+	</degreeDatas>
+	<conflictingTraits>
+		<li>Overweight</li>
+		<li>Anorexic</li>
+	</conflictingTraits>
+  </TraitDef>   
+  
+  <TraitDef>
+	<defName>Anorexic</defName>
+	<commonality>0.25</commonality>
+	<degreeDatas>
+		<li>
+			<label>Anorexic</label>
+			<description>NAME is very underweight, causing HIM to not be able to handle hot or cold, and work slower.</description>
+			<statOffsets>
+				<ComfyTemperatureMax>-12</ComfyTemperatureMax>
+				<ComfyTemperatureMin>12</ComfyTemperatureMin>
+				<WorkSpeedGlobal>-0.15</WorkSpeedGlobal>
+			</statOffsets>
+		</li>
+	</degreeDatas>
+	<conflictingTraits>
+		<li>Overweight</li>
+		<li>Athletic</li>
+	</conflictingTraits>
+  </TraitDef>   
+    
+</TraitDefs>
